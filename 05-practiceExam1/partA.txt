@@ -1,0 +1,7 @@
+public String recombine(String word1, String word2){
+  String half1 = word1.substring(0, word1.length() / 2 - 1);
+  String half2 = word2.substring(word2.length() / 2);
+  String word3 = half1 + half2;
+  System.out.println(word3);
+  return word3;
+}
