@@ -1,5 +1,7 @@
 void setup() {
-  size(600, 500);
+  background(200);
+  noStroke();
+  size(1800, 1000);
 }
 int size = 40;
 color c = #000000;
@@ -37,9 +39,13 @@ void draw() {
     if (key == 'b') {
       c = #0002ff;
     }
+
+    if (key == 'c') {
+      background(200);
+    }
   }
   if (mousePressed == true) {
-    fill(c);
-    rect(pmouseX, pmouseY, size, size);
+    fill(c, 60);
+    circle(pmouseX, pmouseY, size);
   }
 }
